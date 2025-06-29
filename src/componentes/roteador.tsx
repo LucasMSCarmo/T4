@@ -4,7 +4,7 @@ import ListaCliente from "./listaClientes";
 import DetalhesCliente from "./detalhesCliente";
 import FormularioEdicaoCliente from "./formularioEdicaoCliente";
 import FormularioCadastroCliente, { NovoClientePayload } from "./formularioCadastroCliente";
-import { Cliente, Endereco } from "./dados";
+import { Cliente } from "./dados";
 
 export default function Roteador() {
     const [tela, setTela] = useState('Clientes');

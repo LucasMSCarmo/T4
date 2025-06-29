@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Cliente, Endereco, Telefone } from "./dados";
 
-// Este novo tipo descreve EXATAMENTE o que o formulário envia: um cliente sem ID,
-// com um endereço sem ID e uma lista de telefones sem ID.
 export type NovoClientePayload = Omit<Cliente, 'id' | 'endereco' | 'telefones'> & {
     endereco: Omit<Endereco, 'id'>;
     telefones: Omit<Telefone, 'id'>[];

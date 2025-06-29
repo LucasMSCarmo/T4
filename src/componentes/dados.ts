@@ -1,4 +1,3 @@
-// Tipos que correspondem EXATAMENTE à API do back-end para esta atividade
 export type Endereco = {
     id: number;
     estado: string;

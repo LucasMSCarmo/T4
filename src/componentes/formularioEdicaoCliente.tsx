@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cliente, Endereco, Telefone } from "./dados";
+import { Cliente, Telefone } from "./dados";
 
 type Props = {
     tema: string;
@@ -35,7 +35,6 @@ export default function FormularioEdicaoCliente(props: Props) {
             alert("Por favor, preencha o DDD e o número do telefone.");
             return;
         }
-        // Ao adicionar em edição, criamos um objeto Telefone completo, mas com id temporário que o backend irá ignorar
         const novoTelefone: Telefone = { id: Date.now(), ...telTemp };
         setTelefones(prev => [...prev, novoTelefone]);
         setTelTemp({ ddd: '', numero: '' });
